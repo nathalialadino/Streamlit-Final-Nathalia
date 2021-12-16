@@ -110,6 +110,9 @@ nyinpatient = df_inpatient_2[(df_inpatient_2.provider_state == "NY")]
 sb_inpatient = nyinpatient[nyinpatient['provider_name'] == 'UNIVERSITY HOSPITAL ( STONY BROOK )']
 nonsb_nyinpatient = nyinpatient[nyinpatient['provider_name'] != 'UNIVERSITY HOSPITAL ( STONY BROOK )']
 
+nyinpatient.to_csv('/Users/natha/Downloads/nyinpatient.csv', index=False, encoding='utf-8-sig')
+
+
 # Inpatient EDA for comparison
 sb_inpatient_analysis = sv.analyze(sb_inpatient)
 sb_inpatient_analysis.show_html('/Users/natha/Downloads/sweet_report_df_inpatient_sb.html')
@@ -122,6 +125,9 @@ my_report.show_html('/Users/natha/Downloads/sweet_report_inpatient_compare.html'
 nyoutpatient = df_outpatient_2[(df_outpatient_2.provider_state == "NY")]
 sb_outpatient = nyoutpatient[nyoutpatient['provider_name'] == 'University Hospital ( Stony Brook )']
 nonsb_nyoutpatient = nyoutpatient[nyoutpatient['provider_name'] != 'University Hospital ( Stony Brook )']
+
+nyoutpatient.to_csv('/Users/natha/Downloads/nyoutpatient.csv', index=False, encoding='utf-8-sig')
+
 
 #Outpatient EDA for comparison
 my_report2 = sv.compare([sb_outpatient, "Outpatient_SB"], [nonsb_nyoutpatient, "Outpatient_NonSB"])
