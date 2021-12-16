@@ -28,4 +28,3 @@ def load_outpatient():
 
 st.title('Hospital data analysis')
 
-streamlit run hha507final.py
