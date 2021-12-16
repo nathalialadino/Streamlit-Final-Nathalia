@@ -43,6 +43,3 @@ st.dataframe(nyinpatient)
 st.header('New York Outpatient Data')
 st.dataframe(nyoutpatient)
 
-[theme]
-base="light"
-primaryColor="pink"
