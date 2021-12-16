@@ -33,3 +33,6 @@ def load_outpatient():
 df_hospital_2 = load_hospitals()
 df_inpatient_2 = load_inatpatient()
 df_outpatient_2 = load_outpatient()
+
+st.header('Hospital Data Preview')
+st.dataframe(df_hospital_2)
