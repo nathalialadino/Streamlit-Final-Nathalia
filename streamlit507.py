@@ -22,8 +22,8 @@ def load_hospitals():
 
 @st.cache
 def load_inatpatient():
-    df_inpatient_2 = pd.read_csv('https://raw.githubusercontent.com/hantswilliams/AHI_STATS_507/main/Week13_Summary/output/df_inpatient_2.csv')
-    return df_inpatient_2
+    nyinpatient = pd.read_csv('https://raw.githubusercontent.com/nathalialadino/Streamlit-Final-Nathalia/main/nyinpatient.csv')
+    return nyinpatient
 
 @st.cache
 def load_outpatient():
@@ -31,9 +31,12 @@ def load_outpatient():
     return df_outpatient_2
 
 ny_df = load_hospitals()
-df_inpatient_2 = load_inatpatient()
+nyinpatient = load_inatpatient()
 df_outpatient_2 = load_outpatient()
 
 st.header('New York Hospital Data')
 st.dataframe(ny_df)
+
+st.header('New York Inpatient Data')
+st.dataframe(nyinpatient)
 
