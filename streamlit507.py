@@ -34,6 +34,6 @@ ny_df = load_hospitals()
 df_inpatient_2 = load_inatpatient()
 df_outpatient_2 = load_outpatient()
 
-st.header('Hospital Data')
+st.header('New York Hospital Data')
 st.dataframe(ny_df)
 
