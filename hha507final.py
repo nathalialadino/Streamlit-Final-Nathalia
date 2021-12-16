@@ -85,6 +85,9 @@ ny_df = df_hospital_2[(df_hospital_2.state == "NY")]
 sb_hospital = ny_df[ny_df['provider_id'] == '330393']
 nonsb_hospital = ny_df[ny_df['provider_id'] != '330393']
 
+ny_df.to_csv('/Users/natha/Downloads/ny_df.csv', index=False, encoding='utf-8-sig')
+
+
 # Hospital EDA
 
 ny_df['meets_criteria_for_meaningful_use_of_ehrs'] = ny_df['meets_criteria_for_meaningful_use_of_ehrs'].astype(bool)
