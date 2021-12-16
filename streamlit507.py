@@ -17,7 +17,7 @@ st.title('Hospital data analysis')
 
 @st.cache
 def load_hospitals():
-    ny_df = pd.read_csv('https://github.com/nathalialadino/Streamlit-Final-Nathalia/blob/main/ny_df.csv')
+    ny_df = pd.read_csv('https://raw.githubusercontent.com/nathalialadino/Streamlit-Final-Nathalia/main/ny_df.csv')
     return ny_df
 
 @st.cache
