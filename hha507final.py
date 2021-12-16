@@ -137,13 +137,6 @@ dataframe_pivot2
 
 #### PART 2 - Streamlit
 
-import streamlit as st
-import pandas as pd
-import numpy as np
-import plotly.express as px
-from plotly.subplots import make_subplots
-import plotly.graph_objects as go
-import time
 !pip install streamlit
 import streamlit as st
 import pandas as pd
@@ -152,6 +145,7 @@ import plotly.express as px
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 import time
+
 @st.cache
 def load_hospitals():
     df_hospital_2 = pd.read_csv('https://raw.githubusercontent.com/hantswilliams/AHI_STATS_507/main/Week13_Summary/output/df_hospital_2.csv')
@@ -165,6 +159,8 @@ def load_inatpatient():
 def load_outpatient():
     df_outpatient_2 = pd.read_csv('https://raw.githubusercontent.com/hantswilliams/AHI_STATS_507/main/Week13_Summary/output/df_outpatient_2.csv')
     return df_outpatient_2
+
 st.title('Hospital data analysis')
 
+streamlit run hha507final.py
 
