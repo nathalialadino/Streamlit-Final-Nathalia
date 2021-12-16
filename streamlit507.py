@@ -17,7 +17,7 @@ st.title('Hospital data analysis')
 
 @st.cache
 def load_hospitals():
-    df_hospital_2 = pd.read_csv('https://raw.githubusercontent.com/hantswilliams/AHI_STATS_507/main/Week13_Summary/output/df_hospital_2.csv')
+    df_hospital_2 = pd.read_csv('/Users/natha/Downloads/df_hospital_2.csv')
     return df_hospital_2
 
 @st.cache
