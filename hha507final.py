@@ -12,7 +12,7 @@ df_hospital = pd.read_csv("https://raw.githubusercontent.com/hantswilliams/AHI_D
 df_inpatient = pd.read_csv("https://raw.githubusercontent.com/hantswilliams/AHI_DataSci_507/main/Deployment_Streamlit/inpatient_2015.csv")
 df_outpatient = pd.read_csv("https://raw.githubusercontent.com/hantswilliams/AHI_DataSci_507/main/Deployment_Streamlit/outpatient_2015.csv")
 
-!pip install pandas-profiling
+pip install pandas-profiling
 
 from pandas_profiling import ProfileReport
 
@@ -25,7 +25,7 @@ profile2.to_file("/Users/natha/Downloads/profiling_df_outpatient.html")
 profile3 = ProfileReport(df_inpatient, explorative=True)
 profile3.to_file("/Users/natha/Downloads/profiling_df_inpatient.html")
 
-!pip install sweetviz
+pip install sweetviz
 import sweetviz as sv
 
 sweet_report1 = sv.analyze(df_hospital)
@@ -51,7 +51,7 @@ d.open_browser()
 
 ## Cleaning the data
 
-!pip install pyjanitor
+pip install pyjanitor
 from janitor import clean_names, remove_empty
 
 df_hospital_2 = clean_names(df_hospital)
@@ -137,7 +137,7 @@ dataframe_pivot2
 
 #### PART 2 - Streamlit
 
-!pip install streamlit
+pip install streamlit
 import streamlit as st
 import pandas as pd
 import numpy as np
