@@ -30,3 +30,6 @@ def load_outpatient():
     df_outpatient_2 = pd.read_csv('https://raw.githubusercontent.com/hantswilliams/AHI_STATS_507/main/Week13_Summary/output/df_outpatient_2.csv')
     return df_outpatient_2
 
+df_hospital_2 = load_hospitals()
+df_inpatient_2 = load_inatpatient()
+df_outpatient_2 = load_outpatient()
