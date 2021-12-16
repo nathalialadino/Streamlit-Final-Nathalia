@@ -4,6 +4,7 @@ Created on Wed Dec 15 19:27:59 2021
 
 @author: natha
 """
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -42,4 +43,5 @@ st.dataframe(nyinpatient)
 
 st.header('New York Outpatient Data')
 st.dataframe(nyoutpatient)
+
 
